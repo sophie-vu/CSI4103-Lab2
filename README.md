@@ -14,4 +14,4 @@
 ![image](https://user-images.githubusercontent.com/71732942/212978165-4012edb4-ddc5-4bb4-b106-c53afd87e0f2.png)
 
 ### 0.6
-![image](https://user-images.githubusercontent.com/71732942/212978019-36026a34-5f3b-4102-8800-bfa7d3d185f5.png)
+![image](https://user-images.githubusercontent.com/71732942/212979684-0ba09d0d-4998-48e4-8491-b91d5c506784.png)
