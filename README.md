@@ -171,8 +171,3 @@ const App = () => {
 export default App
 ```
 ![image](https://user-images.githubusercontent.com/71732942/213957462-fd659424-98d7-44d9-982e-0ea65bf14c4c.png)
-
-
-
-
-*
