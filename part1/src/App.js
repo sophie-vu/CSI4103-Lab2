@@ -1,35 +1,35 @@
-const Hello = (props) => {
-  console.log(props)
-  return (
-    <div>
-      <p>Hello {props.name}, you are {props.age} years old</p>
-    </div>
-  )
-}
 
-const Footer = () => {
+const Part = (props) => {
   return (
     <div>
-      greeting app created by <a href='https://github.com/sophie-vu/CSI4103-Lab2/tree/part1'>sophie-vu</a>
+      <p>Part name: {props.name} </p>
+      <p>Number of exercises: {props.exercises} </p>
     </div>
   )
 }
 
 const App = () => {
-  const friends = [
-    {name: 'Peter', age: 4},
-    {name: 'Maya', age: 10},
-  ]
+  const course = 'Half Stack application development'
+  const part1 = {
+    name: 'Fundamentals of React',
+    exercises: 10
+  }
+  const part2 = {
+    name: 'Using props to pass data',
+    exercises: 7
+  }
+  const part3 = {
+    name: 'Staet of a component',
+    exercises: 14
+  }
   
   return (
-    <div>
-      <p>
-        {friends[0].name} {friends[0].age}
-      </p>
-      <p>
-      {friends[1].name} {friends[1].age}
-      </p>
-    </div>
+    <>
+      <h1>{course.toString()}</h1>
+      <Part name={part1.name} exercises={part1.exercises} />
+      <Part name={part2.name} exercises={part2.exercises} />
+      <Part name={part3.name} exercises={part3.exercises} />
+    </>
   )
 }
 
