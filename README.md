@@ -5,10 +5,48 @@
 | ID      | 300113938       |
 | Email   | svu043@uottawa        |
 
-<<<<<<< HEAD
-* Complete exercises 1.1 - 1.2: https://fullstackopen.com/en/part1/introduction_to_react#exercises-1-1-1-2 
-=======
-* Complete exercises 0.1 - 0.6: https://fullstackopen.com/en/part0/fundamentals_of_web_apps#exercises-0-1-0-6 (mandatory) [COMPLETED](https://github.com/sophie-vu/CSI4103-Lab2/tree/part0)
-* Complete exercises 1.1 - 1.2: https://fullstackopen.com/en/part1/introduction_to_react#exercises-1-1-1-2 (optional, time permitting) [COMPLETED](https://github.com/sophie-vu/CSI4103-Lab2/tree/part0)
+
 * Complete exercises 1.3 - 1.5: https://fullstackopen.com/en/part1/java_script#exercises-1-3-1-5 (optional, time permitting)
->>>>>>> 1d3dac89a6bf625bf75093d681a69f70d6d98576
+
+```
+
+
+const Part = (props) => {
+  return (
+    <div>
+      <p>Part name: {props.name} </p>
+      <p>Number of exercises: {props.exercises} </p>
+    </div>
+  )
+}
+
+const App = () => {
+  const course = 'Half Stack application development'
+  const part1 = {
+    name: 'Fundamentals of React',
+    exercises: 10
+  }
+  const part2 = {
+    name: 'Using props to pass data',
+    exercises: 7
+  }
+  const part3 = {
+    name: 'Staet of a component',
+    exercises: 14
+  }
+  
+  return (
+    <>
+      <h1>{course.toString()}</h1>
+      <Part name={part1.name} exercises={part1.exercises} />
+      <Part name={part2.name} exercises={part2.exercises} />
+      <Part name={part3.name} exercises={part3.exercises} />
+    </>
+  )
+}
+
+export default App
+
+```
+
+![image](https://user-images.githubusercontent.com/71732942/213956718-b91aa8a9-ac70-4bae-922b-7c822a0084b0.png)
